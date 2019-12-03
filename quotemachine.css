@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  color: white;
+}
+span {
+  font-size: 25px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+ grid-template-rows: 600px;
+  background-color: red;
+  padding: 10px;
+  border-style: solid;
+  border-color: red;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-item {
+  background-color: black;
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+#bush {
+  width: 100%;
+  margin: 5px;
+ margin-top: 100px;
+}
+#button {
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F12C01e5YMVbTuE%2Fgiphy.gif&f=1&nofb=1');
+    background-size: 100%;
+  
+}
+a{
+  font-size: 15px;
+}

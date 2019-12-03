@@ -1,0 +1,30 @@
+<body> 
+
+<div class="grid-container">
+  <div class="grid-item"><div id="titlebox">
+  <h1> George W. Bush Quote machine </h1> 
+  <h3> George W. Bush was known for political gaffs. Here are some of his best ones. </h3> <br /><h5> This was just made for fun, this is in no way a political statement. </h5> 
+  </div> </div>
+  <div class="grid-item"><h1>"</h1><span id="quote"> A 'Bushism' is something odd or nonsensical that president Bush said.  </span> <h1>" </h1></div>
+  <div class="grid-item"><h3>Quote Changer: </h3><button id="button" class='btn btn-success'> Change quote </button> <img id="bush" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.macleans.ca%2Fwp-content%2Fuploads%2F2009%2F03%2F090317_bush.jpg%3Fw%3D300&f=1&nofb=1"> </img> 
+  <a href="https://www.youtube.com/watch?v=JhmdEq3JhoY">Click me for a video of him actually saying these things. </a> </div>
+</div>
+<script> 
+const button = document.querySelector('button')
+const quote = document.querySelector('quote')
+const quotelist = [ 'Our enemies are innovative and resourceful, and so are we. They never stop thinking about new ways to harm our country and our people, and neither do we.', 'I know how hard it is for you to put food on your family.', 'Rarely is the question asked: Is our children learning?', 'Too many good docs are getting out of the business. Too many OB/GYNs aren’t able to practice their love with women all across the country.', 'You teach a child to read, and he or her will be able to pass a literacy test.', 'Neither in French nor in English nor in Mexican.', 'I’m the decider, and I decide what is best. And what’s best is for Don Rumsfeld to remain as the secretary of defense.', 'See, in my line of work you got to keep repeating things over and over and over again for the truth to sink in, to kind of catapult the propaganda.',
+ 'And so, General, I want to thank you for your service. And I appreciate the fact that you really snatched defeat out of the jaws of those who are trying to defeat us in Iraq.', 
+                  'There’s an old saying in Tennessee—I know it’s in Texas, probably in Tennessee—that says, fool me once, shame on—shame on you. Fool me—you can’t get fooled again.']
+
+
+button.addEventListener('click', changeQuote)
+
+function changeQuote(){
+const QuoteIndex= parseInt(Math.random()*quotelist.length)
+span = document.getElementById("quote");
+txt = document.createTextNode(quotelist[QuoteIndex]);
+$("span").html(txt)
+}
+
+</script> 
+</body> 
